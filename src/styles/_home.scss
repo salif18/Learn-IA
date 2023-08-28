@@ -1,0 +1,130 @@
+.home{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myheader{
+    width: 100%;
+    height: 50px;
+    background: rgb(176, 204, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        font-family: Roboto, sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+    }
+}
+
+.container{
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    height: 600px;
+    box-shadow: 2px 2px 2px 2px #d3d3d3;
+    .container-img{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 2px 2px 2px 2px #d3d3d3;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .btn-url{
+            width: 155px;
+            height: 40px;
+            border-radius: 20px;
+            font-family: roboto ,sans-serif;
+            background: rgb(15, 127, 231);
+            color: beige;
+            border: none;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+            .noms{
+                width: 300px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px;
+                border: 1px solid #ececee;
+                box-shadow: 2px 2px 2px 2px #d3d3d3;
+                border-radius: 10px;
+                background-color: #ffffff;
+                padding: 10px;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                span{
+                    display: flex;
+                    flex-direction: column;
+                    font-family:sans-serif;
+                    margin: 5px;
+                    text-transform: capitalize;
+                    
+                }
+            }
+            
+        }
+    }
+
+    .formulaire{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        
+        .field{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .btn-file{
+                width: 150px;
+                height: 40px;
+                border-radius: 20px;
+                font-family: roboto ,sans-serif;
+                background: #555;
+                color: beige;
+                border: none;
+            }
+           
+        }
+        input[type='file']{
+            display: none;
+            margin: 20px;
+        }
+        input{
+            margin:20px;
+            width: 300px;
+            height: 40px;
+            border: 1px solid #ececee;
+            outline: none;
+            padding: 10px;
+            font-family: Roboto, sans-serif;
+            box-shadow: 2px 2px 2px 2px #d3d3d3;
+            border-radius: 20px;
+        }
+    }
+}
+
